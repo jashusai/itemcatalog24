@@ -33,7 +33,7 @@ setup environment:
 
 2.open terminal in particular folder and create virtualenvironment then type virtualenv flask-env then flask environment will be created and flask-env activate then type source flask-env/bin/activate.
 
-3.in that flask-env we install pip install Flask and pip install sqlalchemy.
+3.in that flask-env we install pip install Flask, pip install sqlalchemy,pip install oauth2clientand finally pip install requests.
 
 4.we run the database.py in terminal then database.pyc and restaurantmenu.db will be created under the flask-env only.
 
@@ -48,3 +48,5 @@ setup environment:
 9.then show the Restaurants and MenuItems.
 
 10.here we will add a new Restaurant (or) add a new Menu Item what ever we want.
+
+11.And we want it to logout it then its redirect to showRestaruants.
