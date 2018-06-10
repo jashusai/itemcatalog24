@@ -343,7 +343,7 @@ def deleteMenuItem(restaurant_id, menu_id):
         return render_template('deleteMenuItem.html', item=itemToDelete)
     # return "This page is for deleting menu item %s" % menu_id
 
-# Edit a menu item
+# Edit a menu items
 
 
 @app.route('/restaurant/<int:restaurant_id>/menu/<int:menu_id>/edit', methods=['GET', 'POST'])
