@@ -217,9 +217,9 @@ def logout():
             del login_session['provider']
             flash("you have succesfully been logout")
             return redirect(url_for('showRestaurants'))
-            else:
-                flash("you were not logged in")
-                return redirect(url_for('showRestaurants'))
+        else:
+            flash("you were not logged in")
+            return redirect(url_for('showRestaurants'))
 
 
 # Show all restaurants
