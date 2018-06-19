@@ -184,11 +184,11 @@ def gconnect():
     user_id = getUserID(login_session['email'])
     if user_id:
         print 'Existing user#' + str(user_id) + 'matches this email'
-     else:
+    else:
         user_id = createUser(login_session)
         print 'New user_id#' + str(user_id) + 'created'
-        login_session['user_id'] = user_id
-        print 'Login session is tied to :id#' + str(
+    login_session['user_id'] = user_id
+    print 'Login session is tied to :id#' + str(
         login_session['user_id'])
 
     output = ''
