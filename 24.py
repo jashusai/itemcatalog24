@@ -108,7 +108,7 @@ def gdisconnect():
 @app.route('/gconnect', methods=['POST'])
 def gconnect():
     # validate state token
-    if request.args.get('state')! = login_session['state']:
+    if request.args.get('state') != login_session['state']:
         response = make_response(json.dumps('Invalid state parameter.'), 401)
         response.headers['Content-Type'] = 'application-json'
         return response
