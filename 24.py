@@ -53,9 +53,9 @@ def getUserInfo(user_id):
 def getUserID(email):
     try:
         user = session.query(User).filter_by(email=email).first()
-        return user.id
-        except:
-            return None
+        return user.id  
+    except:
+        return None
 
 
 def login_required(f):
