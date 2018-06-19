@@ -187,9 +187,8 @@ def gconnect():
     else:
         user_id = createUser(login_session)
         print 'New user_id#' + str(user_id) + 'created'
-        login_session['user_id'] = user_id
-        print 'Login session is tied to :id#' + str(
-        login_session['user_id'])
+    login_session['user_id'] = user_id
+    print 'Login session is tied to :id#' + str(login_session['user_id'])
 
     output = ''
     output += '<h1>Welcome, '
